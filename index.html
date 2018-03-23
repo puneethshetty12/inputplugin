@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        <script src="input.js"></script>
+    </head>
+<body>
+    <link rel="stylesheet" href="custom.css"/>
+<div>
+  <input type="text" class="inputText" required/>
+    <input type="text" class="inputText2" required/>
+  <span class="floating-label">Your email address</span>
+</div> 
+    <script>
+       //$('.inputText').on('focus blur', inputstyle);
+        $(document).ready(function(){
+            $('.inputText').inputstyle({placeholder : 'Eingeben sie bitte'});
+            $('.inputText2').inputstyle({placeholder : 'please'});
+        });
+            
+
+   // $( '.floating-label' ).inputstyle();
+       
+
+    </script>
+</body>
+</html>
